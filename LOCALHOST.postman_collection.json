@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "ab42e76f-6585-42f6-a8e7-d6b7711ff8f0",
+		"name": "LOCALHOST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ano\": \"2022\",\r\n    \"modelo\": \"HB20 Comfort\",\r\n    \"marca_fabricante\": \"HB20\",\r\n    \"valor_tabela\": \"50.000,00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/car",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/car/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"car",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/car/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"car",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show by id Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"ano\": \"2022\",\r\n    \"modelo\": \"HB20 Comfort (alterado)\",\r\n    \"marca_fabricante\": \"HB20\",\r\n    \"valor_tabela\": \"50.000,00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/car/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"car",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
